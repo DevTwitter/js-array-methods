@@ -9,9 +9,9 @@
 
 **An interactive, comprehensive guide to JavaScript array manipulation methods with live code playground**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Now-4CAF50?style=for-the-badge)](https://js-array-methods.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Now-4CAF50?style=for-the-badge)](https://js-array-methods-theta.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/DevTwitter/js-array-methods)
-[![String Methods](https://img.shields.io/badge/String%20Methods-Demo-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://js-string-methods.vercel.app)
+[![String Methods](https://img.shields.io/badge/String%20Methods-Demo-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://js-array-methods-theta.vercel.app/)
 
 </div>
 
@@ -301,7 +301,7 @@ Check out our companion project for JavaScript string manipulation:
 - **Modern UI** with dark/light theme support
 
 **Links:**
-- 🌐 **[Live Demo](https://js-string-methods.vercel.app)** - Try it online
+- 🌐 **[Live Demo](https://js-array-methods-theta.vercel.app/)** - Try it online
 - 📚 **[GitHub Repository](https://github.com/DevTwitter/js-string-methods)** - View source code
 
 ---

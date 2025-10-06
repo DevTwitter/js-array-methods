@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'JS Array Methods',
     description: 'JS Array Methods By DevTwitter',
     authors: [{ name: 'Milad Niroee', url: 'https://github.com/miladniroee' }],
-    url: 'https://js-array-methods.vercel.app',
+    url: 'https://js-array-methods-theta.vercel.app/',
     siteName: 'JS Array Methods',
     images: [
       { url: 'icon.png' },

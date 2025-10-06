@@ -51,7 +51,7 @@ function PageContent() {
                 </p>
                 <div className="flex gap-2">
                   <Button asChild variant="default" className="flex-1">
-                    <Link href="https://js-string-methods.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://js-array-methods-theta.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       {t.relatedProjects.stringMethods.demoButton}
                     </Link>
