@@ -301,7 +301,7 @@ Check out our companion project for JavaScript string manipulation:
 - **Modern UI** with dark/light theme support
 
 **Links:**
-- 🌐 **[Live Demo](https://js-array-methods-theta.vercel.app/)** - Try it online
+- 🌐 **[Live Demo](https://js-string-methods.vercel.app/)** - Try it online
 - 📚 **[GitHub Repository](https://github.com/DevTwitter/js-string-methods)** - View source code
 
 ---
