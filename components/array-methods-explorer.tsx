@@ -116,7 +116,7 @@ export default function ArrayMethodsExplorer() {
             </div>
           )}
         </div>
-        <footer className="mt-16 border-t border-zinc-200 pt-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
+        <footer className="hidden md:block mt-16 border-zinc-200 pt-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
           <p>{t.footer.createdWith} 
             <a 
               href={t.footer.creatorLink} 
@@ -130,6 +130,34 @@ export default function ArrayMethodsExplorer() {
               </span>
             </a>
           </p>
+
+
+          {/* Donation Section */}
+          <div className="text-center mt-7">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">{t.donation.description}</p>
+            <div className="flex gap-3 justify-center">
+              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black">
+                <a
+                  href="https://buymeacoffee.com/devtwitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  ☕ {t.donation.buyMeCoffee}
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
+                <a
+                  href="https://hamibash.com/devtwitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  💖 {t.donation.supportOnHamiBash}
+                </a>
+              </Button>
+            </div>
+          </div>
         </footer>
       </div>
 
@@ -153,8 +181,8 @@ export default function ArrayMethodsExplorer() {
             <h3 className="mb-2 font-semibold text-js-600">{t.common.syntax}</h3>
             <div className="rounded-md bg-zinc-100 p-3 font-mono text-sm text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">
               <pre className="language-javascript">
-                <code dangerouslySetInnerHTML={{ 
-                  __html: hljs.highlight(selectedMethod.syntax, { language: 'javascript' }).value 
+                <code dangerouslySetInnerHTML={{
+                  __html: hljs.highlight(selectedMethod.syntax, { language: 'javascript' }).value
                 }} />
               </pre>
             </div>
@@ -164,8 +192,8 @@ export default function ArrayMethodsExplorer() {
             <h3 className="mb-2 font-semibold text-js-600">{t.common.example}</h3>
             <div className="rounded-md bg-zinc-100 p-4 font-mono text-sm text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">
               <pre className="language-javascript whitespace-pre-wrap">
-                <code dangerouslySetInnerHTML={{ 
-                  __html: hljs.highlight(selectedMethod.example, { language: 'javascript' }).value 
+                <code dangerouslySetInnerHTML={{
+                  __html: hljs.highlight(selectedMethod.example, { language: 'javascript' }).value
                 }} />
               </pre>
             </div>
@@ -182,6 +210,50 @@ export default function ArrayMethodsExplorer() {
         <Card className="border-zinc-200 p-6 dark:border-zinc-800">
           <CodePlayground method={selectedMethod} />
         </Card>
+
+        {/* Mobile Footer - Hidden on desktop, shown on mobile */}
+        <footer className="md:hidden mt-8 border-zinc-200 pt-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
+          <p>{t.footer.createdWith} 
+            <a 
+              href={t.footer.creatorLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center py-1 px-2 mx-2 relative group"
+            >
+              <span className="absolute inset-0 bg-js-600 transition-all duration-300 skew-x-3 skew-y-3"></span>
+              <span className="relative z-10 font-medium text-black">
+                {t.footer.creatorLinkText}
+              </span>
+            </a>
+          </p>
+
+          {/* Donation Section */}
+          <div className="text-center mt-7">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">{t.donation.description}</p>
+            <div className="flex gap-3 justify-center">
+              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black">
+                <a
+                  href="https://buymeacoffee.com/devtwitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  ☕ {t.donation.buyMeCoffee}
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
+                <a
+                  href="https://hamibash.com/devtwitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  💖 {t.donation.supportOnHamiBash}
+                </a>
+              </Button>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   )
